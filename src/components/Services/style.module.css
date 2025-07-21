@@ -1,0 +1,56 @@
+.textAlignCenter {
+    text-align: center;
+}
+
+.certificateItem {
+    width: 160px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.08);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: box-shadow 0.2s;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+}
+
+.certificateItem:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+    background-color: #69bfa4;
+}
+
+
+.certificateSwiper :global(.swiper-button-prev) {
+    left: -8px;
+    top: 62%;
+    transform: translateY(-50%);
+    color: #69bfa4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+}
+
+.certificateSwiper :global(.swiper-button-next) {
+    right: -8px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #69bfa4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
