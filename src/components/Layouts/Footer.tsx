@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                     </a>
                   </li> */}
                   <li>
-                    <a href="https://www.instagram.com/g3cyberspace?igsh=cXUyenR0amQzMjFt" target="_blank">
+                    <a href="https://www.instagram.com/g3_cyberspace" target="_blank">
                       <i className="bx bxl-instagram"></i>
                     </a>
                   </li>
