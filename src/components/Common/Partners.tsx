@@ -8,8 +8,8 @@ import Image from "next/image";
 const Partners: React.FC = () => {
   return (
     <>
-      <div className="partner-area ptb-100">
-        <div className="container">
+      <div className="ptb-100 bg-gray-50">
+        <div className="container mx-auto px-4">
           <Swiper
             spaceBetween={30}
             breakpoints={{
@@ -32,108 +32,77 @@ const Partners: React.FC = () => {
               pauseOnMouseEnter: true,
             }}
             modules={[Autoplay]}
-            className="partner-slide"
+            className="partner-carousel"
           >
             <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <a href="#" target="_blank" className="block">
                   <Image
                     src="/images/partner/partner-1-1.png"
-                    alt="Image"
+                    alt="Partner"
                     width={140}
                     height={140}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <a href="#" target="_blank" className="block">
                   <Image
                     src="/images/partner/partner-2-2.png"
-                    alt="Image"
+                    alt="Partner"
                     width={140}
                     height={140}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <a href="#" target="_blank" className="block">
                   <Image
                     src="/images/partner/partner-3-3.png"
-                    alt="Image"
+                    alt="Partner"
                     width={140}
                     height={140}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <a href="#" target="_blank" className="block">
                   <Image
                     src="/images/partner/Mindbridge-black-logo.png"
-                    alt="Image"
+                    alt="Partner"
                     width={140}
                     height={140}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <a href="#" target="_blank" className="block">
                   <Image
                     src="/images/partner/E Logo 2.png"
-                    alt="Image"
+                    alt="Partner"
                     width={140}
                     height={140}
-                  />
-                </a>
-              </div>
-              {/* <div className="partner-item">
-                <a href="#" target="_blank">
-                  <Image
-                    src="/images/partner/partner-4-4.png"
-                    alt="Image"
-                    width={140}
-                    height={140}
-                  />
-                </a>
-              </div> */}
-            </SwiperSlide>
-
-            {/* <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
-                  <Image
-                    src="/images/partner/partner-5.png"
-                    alt="Image"
-                    width={140}
-                    height={140}
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </a>
               </div>
             </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="partner-item">
-                <a href="#" target="_blank">
-                  <Image
-                    src="/images/partner/partner-3.png"
-                    alt="Image"
-                    width={140}
-                    height={140}
-                  />
-                </a>
-              </div>
-            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

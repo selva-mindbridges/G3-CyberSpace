@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply text-body bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-heading font-extrabold;
+  }
+  
+  a {
+    @apply inline-block transition-all duration-500 no-underline text-body;
+  }
+  
+  a:hover {
+    @apply text-primary no-underline;
+  }
+  
+  button {
+    @apply outline-none shadow-none border-none;
+  }
+  
+  button:focus {
+    @apply shadow-none;
+  }
+}
+
+/* Custom component utilities */
+@layer components {
+  .default-btn {
+    @apply inline-block bg-primary text-white font-bold py-4 px-8 rounded transition-all duration-500 hover:bg-secondary;
+  }
+  
+  .default-btn span {
+    @apply relative;
+  }
+  
+  .section-title {
+    @apply text-center mb-12;
+  }
+  
+  .section-title span {
+    @apply text-primary text-lg font-semibold mb-3 block;
+  }
+  
+  .section-title h2 {
+    @apply text-4xl md:text-5xl font-extrabold text-heading mb-0;
+  }
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .pt-100 {
+    @apply pt-24 md:pt-28 lg:pt-32;
+  }
+  
+  .pb-100 {
+    @apply pb-24 md:pb-28 lg:pb-32;
+  }
+  
+  .pb-70 {
+    @apply pb-16 md:pb-20 lg:pb-24;
+  }
+  
+  .ptb-100 {
+    @apply py-24 md:py-28 lg:py-32;
+  }
+  
+  .border-bottom-1 {
+    @apply border-b border-gray-200;
+  }
+}
+
+/* Sticky Navbar */
+#navbar.is-sticky {
+  @apply fixed top-0 left-0 w-full shadow-md z-50 bg-white;
+}
+
+/* React Tabs Styling */
+.react-tabs__tab--selected {
+  @apply text-primary border-primary !important;
+}
+
+.react-tabs__tab:focus {
+  @apply outline-none;
+}
+
+.react-tabs__tab:focus-after {
+  @apply outline-none;
+}
+
+/* Flaticon and Boxicons compatibility */
+@font-face {
+  font-family: 'Flaticon';
+  src: url('/fonts/Flaticon.eot');
+  src: url('/fonts/Flaticon.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Flaticon.woff2') format('woff2'),
+       url('/fonts/Flaticon.woff') format('woff'),
+       url('/fonts/Flaticon.ttf') format('truetype'),
+       url('/fonts/Flaticon.svg#Flaticon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxicons';
+  src: url('/fonts/boxicons.eot');
+  src: url('/fonts/boxicons.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/boxicons.woff2') format('woff2'),
+       url('/fonts/boxicons.woff') format('woff'),
+       url('/fonts/boxicons.ttf') format('truetype'),
+       url('/fonts/boxicons.svg#boxicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="bx-"],
+[class*=" bx-"] {
+  font-family: 'boxicons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

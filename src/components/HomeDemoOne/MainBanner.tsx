@@ -3,23 +3,27 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import classes from "./style.module.css"
 
 const MainBanner: React.FC = () => {
   return (
     <>
-      <div className="banner-area bg-1 border-bottom-1">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12">
-              <div className="banner-content">
-                <span className={`top-title ${classes.homeHeadContent}`}>Secure. Comply. Transform.</span>
-                <h1>Accelerate Growth—Backed by Cyber Resilience and Compliance</h1>
-                <p className={` ${classes.homeSubContent}`}>
-                G3 Cyberspace helps organizations secure their digital landscape, manage third-party risks, and meet evolving compliance demands. From cybersecurity and privacy automation to regulatory readiness and TPRM, we deliver complete protection to drive secure, scalable growth.
+      <div className="relative bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 border-b border-gray-200" style={{backgroundImage: 'url(/images/banner/banner-bg-1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto relative z-10">
+          <div className="flex flex-wrap items-center">
+            <div className="w-full lg:w-1/2 px-4">
+              <div className="py-20 md:py-32">
+                <span className="inline-block text-[#217ca7] text-lg font-semibold mb-4">
+                  Secure. Comply. Transform.
+                </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                  Accelerate Growth—Backed by Cyber Resilience and Compliance
+                </h1>
+                <p className="text-white text-lg mb-8 leading-relaxed">
+                  G3 Cyberspace helps organizations secure their digital landscape, manage third-party risks, and meet evolving compliance demands. From cybersecurity and privacy automation to regulatory readiness and TPRM, we deliver complete protection to drive secure, scalable growth.
                 </p>
 
-                <div className="banner-btn">
+                <div>
                   <Link href="/contact" className="default-btn">
                     <span>Contact Us</span>
                   </Link>
@@ -27,14 +31,14 @@ const MainBanner: React.FC = () => {
               </div>
             </div>
 
-            {/* <div className="col-lg-6 col-md-12">
-              <div className={`banner-image`}>
+            {/* <div className="w-full lg:w-1/2 px-4">
+              <div className="py-10">
                 <Image
                   src="/images/cybersecurity-concept-illustration.jpg"
                   alt="image"
                   width={900}
                   height={745}
-                  className={`${classes.bgImgRadius}`}
+                  className="rounded-3xl"
                 />
               </div>
             </div> */}

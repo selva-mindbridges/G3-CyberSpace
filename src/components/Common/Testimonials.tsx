@@ -7,10 +7,13 @@ import { Navigation, Autoplay } from "swiper/modules";
 const Testimonials: React.FC = () => {
   return (
     <>
-      <div className="testimonials-area ptb-100 jarallax">
-        <div className="container">
-          <div className="testimonials">
-            <span>What our customers say</span>
+      <div className="ptb-100 bg-gradient-to-r from-gray-800 to-gray-900 relative overflow-hidden" style={{backgroundImage: 'url(/images/testimonials-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <span className="block text-center text-primary text-lg font-semibold mb-8">
+              What our customers say
+            </span>
 
             <Swiper
               navigation={true}
@@ -20,69 +23,69 @@ const Testimonials: React.FC = () => {
                 pauseOnMouseEnter: true,
               }}
               modules={[Autoplay, Navigation]}
-              className="testimonials-slide"
+              className="testimonials-carousel"
             >
               <SwiperSlide>
-                <div className="testimonials-item">
-                  <i className="flaticon-quote"></i>
-                  <p>
-                    “Nam liber tempor cum soluta nobis eleifend option congue
+                <div className="bg-white rounded-lg p-8 md:p-12 text-center shadow-xl">
+                  <i className="flaticon-quote text-5xl text-primary mb-6 block"></i>
+                  <p className="text-body text-lg leading-relaxed mb-8 italic">
+                    "Nam liber tempor cum soluta nobis eleifend option congue
                     nihil imperdiet doming id quod mazim placerat facer possim
                     assum. Lorem ipsum dolor sit amet, consectetuer adipiscing
                     elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat.”
+                    dolore magna aliquam erat volutpat."
                   </p>
 
-                  <ul>
+                  <ul className="flex justify-center gap-2 mb-6">
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                   </ul>
 
-                  <h3>Jastin Anderson</h3>
-                  <span>CEO</span>
+                  <h3 className="text-2xl font-bold text-heading mb-2">Jastin Anderson</h3>
+                  <span className="text-body">CEO</span>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testimonials-item">
-                  <i className="flaticon-quote"></i>
-                  <p>
-                    G3 Cyberspace guided us through a smooth ISO 27001:2022 transition with clear, hands-on support across risk assessment, documentation, and audit prep. Their expertise made certification seamless.”
+                <div className="bg-white rounded-lg p-8 md:p-12 text-center shadow-xl">
+                  <i className="flaticon-quote text-5xl text-primary mb-6 block"></i>
+                  <p className="text-body text-lg leading-relaxed mb-8 italic">
+                    "G3 Cyberspace guided us through a smooth ISO 27001:2022 transition with clear, hands-on support across risk assessment, documentation, and audit prep. Their expertise made certification seamless."
                   </p>
 
-                  <ul>
+                  <ul className="flex justify-center gap-2 mb-6">
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                     <li>
-                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star text-yellow-400 text-xl"></i>
                     </li>
                   </ul>
 
-                  <h3>Ahmed Iqbal Sheriff, VP</h3>
-                  <span> 20Cube Logistics</span>
+                  <h3 className="text-2xl font-bold text-heading mb-2">Ahmed Iqbal Sheriff, VP</h3>
+                  <span className="text-body">20Cube Logistics</span>
                 </div>
               </SwiperSlide>
             </Swiper>

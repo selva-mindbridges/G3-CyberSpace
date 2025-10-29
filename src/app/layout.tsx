@@ -1,16 +1,11 @@
-import "../app/styles/bootstrap.min.css";
-import "../app/styles/animate.min.css";
-import "../app/styles/boxicons.min.css";
-import "../app/styles/meanmenu.min.css";
-import "../app/styles/flaticon.css";
+// Tailwind CSS
+import "../app/styles/globals.css";
+
+// Third-party styles
 import "react-tabs/style/react-tabs.css";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "swiper/css";
 import "swiper/css/bundle";
-
-// Global style
-import "../app/styles/style.css";
-import "../app/styles/responsive.css";
 
 import type { Metadata } from "next";
 import { Lato } from "next/font/google"; 

@@ -23,54 +23,49 @@ const NavbarTwo: React.FC = () => {
     });
   });
 
-  const classOne = menu
-    ? "collapse navbar-collapse"
-    : "collapse navbar-collapse show";
-  const classTwo = menu
-    ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right";
+  const mobileMenuClass = menu ? "hidden" : "block";
+  const hamburgerClass = menu
+    ? "flex flex-col gap-1.5 cursor-pointer"
+    : "flex flex-col gap-1.5 cursor-pointer";
 
   return (
     <>
-      <header className="header-area p-relative">
-        <div id="navbar" className="navbar-area navbar-area-two">
-          <div className="main-nav">
-            <div className="container">
-              <nav className="navbar navbar-expand-md">
-                <Link href="/" className="navbar-brand">
+      <header className="relative">
+        <div id="navbar" className="bg-white border-b border-gray-100 transition-all duration-300">
+          <div className="w-full">
+            <div className="container mx-auto">
+              <nav className="flex items-center justify-between py-4">
+                <Link href="/" className="flex-shrink-0">
                   <Image
                     src="/images/logo-01.png"
                     alt="logo"
                     width={150}
                     height={42}
+                    className="h-auto"
                   />
                 </Link>
 
                 <button
                   onClick={toggleNavbar}
-                  className={classTwo}
+                  className={`${hamburgerClass} md:hidden z-50 p-2`}
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span className="icon-bar top-bar"></span>
-                  <span className="icon-bar middle-bar"></span>
-                  <span className="icon-bar bottom-bar"></span>
+                  <span className="w-6 h-0.5 bg-heading transition-all"></span>
+                  <span className="w-6 h-0.5 bg-heading transition-all"></span>
+                  <span className="w-6 h-0.5 bg-heading transition-all"></span>
                 </button>
 
-                <div className={classOne} id="navbarSupportedContent">
-                  <ul className="navbar-nav m-auto">
+                <div className={`${mobileMenuClass} md:flex flex-col md:flex-row items-start md:items-center absolute md:relative left-0 top-full md:top-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none z-40`}>
+                  <ul className="flex flex-col md:flex-row md:mx-auto p-4 md:p-0">
                     {menus.map((menuItem) => (
                       <MenuItem key={menuItem.label} {...menuItem} />
                     ))}
                   </ul>
                 </div>
 
-                <div className="others-option">
-                  <div className="get-quote">
+                <div className="hidden md:flex items-center">
+                  <div>
                     <Link href="/contact" className="default-btn">
                       <span>Contact Us</span>
                     </Link>

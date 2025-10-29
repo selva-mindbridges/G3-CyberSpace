@@ -27,9 +27,11 @@ const GoTop = () => {
   return (
     <>
       {showButton && (
-        <div onClick={scrollToTop} className="go-top">
-          <i className="bx bx-chevrons-up"></i>
-          <i className="bx bx-chevrons-up"></i>
+        <div 
+          onClick={scrollToTop} 
+          className="fixed right-6 bottom-6 w-12 h-12 bg-primary hover:bg-secondary rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 z-50 group"
+        >
+          <i className="bx bx-chevrons-up text-white text-2xl group-hover:animate-bounce"></i>
         </div>
       )}
     </>
