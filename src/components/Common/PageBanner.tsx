@@ -8,6 +8,7 @@ interface PageBannerProps {
   homePageUrl: string;
   homePageText: string;
   activePageText: string;
+  leftAlignedLayout?: boolean;
 }
 
 const PageBanner: React.FC<PageBannerProps> = ({
@@ -15,12 +16,13 @@ const PageBanner: React.FC<PageBannerProps> = ({
   homePageUrl,
   homePageText,
   activePageText,
+  leftAlignedLayout = false,
 }) => {
   return (
     <>
       <div className="page-title-area page-title-style-two">
         <div className="container">
-          <div className="page-title-content">
+          <div className={`page-title-content ${leftAlignedLayout ? 'left-aligned-layout' : ''}`}>
             <h2>{pageTitle}</h2>
 
             {/* <ul>

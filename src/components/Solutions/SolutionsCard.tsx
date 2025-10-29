@@ -40,7 +40,7 @@ const SolutionsCard: React.FC = () => {
               <div className="about-img mb_30">
                 <Image
                 className="mt-4"
-                  src="/images/TRACS.png"
+                  src="/images/TRACS.svg"
                   alt="Image"
                   width={498}
                   height={386}                  
@@ -271,7 +271,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/Smart questionnaire.jpg"
+                  src="/images/TRACS/Smart questionnaire.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -328,10 +328,10 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/Risk Based Questionnaire Scoping.jpg"
+                  src="/images/TRACS/Risk Based Questionnaire Scoping.svg"
                   alt="Image"
-                  width={498}
-                  height={386}
+                  width={450}
+                  height={350}
                 />
               </div>
             </div>
@@ -348,7 +348,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/AI Driven Evidence Review.jpg"
+                  src="/images/TRACS/AI Driven Evidence Review.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -403,7 +403,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/POst contract compliance monitoring.png"
+                  src="/images/TRACS/POst contract compliance monitoring.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -420,7 +420,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/Global COmpliance support.png"
+                  src="/images/TRACS/Global COmpliance support.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -475,7 +475,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/360 degree compliance.png "
+                  src="/images/TRACS/360 degree compliance.svg "
                   alt="Image"
                   width={498}
                   height={386}
@@ -492,7 +492,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/Enterprise ready integrations & API.jpg"
+                  src="/images/TRACS/Enterprise ready integrations & API.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -547,7 +547,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/Visual Dashboards & reporting.jpg"
+                  src="/images/TRACS/Visual Dashboards & reporting.svg"
                   alt="Image"
                   width={498}
                   height={386}
@@ -564,7 +564,7 @@ const SolutionsCard: React.FC = () => {
             <div className="col-lg-6">
               <div className="about-img mb_30">
                 <Image
-                  src="/images/TRACS/User roles & workflow automation.jpg"
+                  src="/images/TRACS/User roles & workflow automation.svg"
                   alt="Image"
                   width={498}
                   height={386}

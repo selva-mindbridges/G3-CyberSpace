@@ -39,10 +39,10 @@ const Navbar: React.FC = () => {
               <nav className="navbar navbar-expand-md">
                 <Link href="/" className="navbar-brand">
                   <Image
-                    src="/images/G3-Logo.png"
+                    src="/images/G3-Logo.svg"
                     alt="logo"
-                    width={150}
-                    height={42}
+                    width={100}
+                    height={35}
                   />
                 </Link>
 

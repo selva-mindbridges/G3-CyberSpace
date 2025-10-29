@@ -413,6 +413,9 @@
             h2 {
                 font-size: 30px;
             }
+            &.left-aligned-layout {
+                max-width: 100%;
+            }
         }
         &.page-title-style-two {
             padding-top: 200px;
@@ -1587,7 +1590,7 @@
         }
     }
     .approach-img {
-        background-image: url(/images/approach-img.jpg);
+        background-image: url(/images/approach-img.svg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -16,7 +16,7 @@ const ContactForm: React.FC = () => {
                   </div>
 
                   <form id="contactForm"
-                            action="https://formspree.io/f/myzpkgyb" 
+                            action="https://formspree.io/f/mpwjlpnv" 
                             method="POST"                  
                   >
                     <div className="row">
@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
                       </a>
                     </li> */}
                     <li>
-                      <a href="https://www.instagram.com/g3cyberspace?igsh=cXUyenR0amQzMjFt" target="_blank">
+                      <a href="https://www.instagram.com/g3_cyberspace" target="_blank">
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>

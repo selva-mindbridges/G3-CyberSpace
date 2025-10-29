@@ -17,7 +17,7 @@ const OurApproach: React.FC = () => {
             <div className="col-lg-6">
               <div className="approach-img">
                 <Image
-                  src="/images/approach-img.jpg"
+                  src="/images/approach-img.svg"
                   alt="Image"
                   width={600}
                   height={505}

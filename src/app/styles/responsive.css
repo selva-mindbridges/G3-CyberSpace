@@ -326,6 +326,9 @@
   .page-title-area .page-title-content h2 {
     font-size: 30px;
   }
+  .page-title-area .page-title-content.left-aligned-layout {
+    max-width: 100%;
+  }
   .page-title-area.page-title-style-two {
     padding-top: 200px;
     padding-bottom: 70px;
@@ -1194,7 +1197,7 @@
     align-items: normal !important;
   }
   .approach-img {
-    background-image: url(/images/approach-img.jpg);
+    background-image: url(/images/approach-img.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

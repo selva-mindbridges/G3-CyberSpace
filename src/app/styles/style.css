@@ -792,7 +792,7 @@ Banner Area Style
    background-size: cover;
 }
 .banner-area.bg-2 {
-  background-image: url(/images/banner/banner-bg-6.png);
+  background-image: url(/images/banner/banner-bg-6.svg);
 }
 .banner-area.bg-4 {
   background-image: url(/images/banner/banner-bg-4.jpg);
@@ -814,10 +814,10 @@ Banner Area Style
 }
 .banner-area.banner-area-two .banner-content h1 {
   margin-bottom: 25px;
-  color: #ffffff;
+  color: black;
 }
 .banner-area.banner-area-two .banner-content p {
-  color: #ffffff;
+  color: black;
 }
 .banner-area.banner-area-three {
   height: auto;
@@ -2160,7 +2160,7 @@ Pricing Area Style
 Counter Area Style
 ======================================================*/
 .counter-area {
-  background-image: url(/images/counter-bg-1.jpg);
+  background-image: url(/images/counter-bg-1.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2565,7 +2565,7 @@ Page Title Area Style
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/images/Header-image.png);
+  background-image: url(/images/Header-image.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2618,6 +2618,15 @@ Page Title Area Style
 }
 .page-title-area .page-title-content ul .active {
   color: #e21f36;
+}
+.page-title-area .page-title-content.left-aligned-layout {
+  text-align: left;
+  max-width: 50%;
+  margin-left: 0;
+  margin-right: auto;
+}
+.page-title-area .page-title-content.left-aligned-layout h2 {
+  text-align: left;
 }
 .page-title-area.page-title-style-two {
   padding-top: 265px;
