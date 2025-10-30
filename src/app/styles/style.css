@@ -45,8 +45,9 @@ This files table contents are outlined below>>>>>
 Default Style
 ============================*/
 body {
-  font-size: 16px;
+  font-size: 17px;
   color: #4b5280;
+  font-weight: 500;
 }
 body.body-color-three {
   background-color: #f5f7fa;
@@ -89,8 +90,9 @@ button:focus {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .d-table {
@@ -103,7 +105,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 15px;
   line-height: 1.8;
   font-weight: 500;
@@ -115,6 +117,7 @@ p:last-child {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 
 ul {
@@ -128,8 +131,9 @@ ul {
   color: #000000;
   border: 1px solid #ebebeb;
   background-color: transparent;
-  border-radius: 0;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
   padding: 10px 20px;
   width: 100%;
 }
@@ -153,6 +157,7 @@ ul {
 
 textarea.form-control {
   height: auto;
+  border-radius: 8px;
 }
 
 .ptb-100 {
@@ -215,8 +220,8 @@ Bg-color Style*/
 Default Btn Area Style*/
 .default-btn {
   z-index: 1;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 17px;
   color: #ffffff;
   padding: 15px 30px 16px;
   line-height: 1;
@@ -230,6 +235,7 @@ Default Btn Area Style*/
   position: relative;
   overflow: hidden;
   text-transform: capitalize;
+  border-radius: 10px;
 }
 .default-btn:hover {
   background-color: #69bfa4;
@@ -237,7 +243,7 @@ Default Btn Area Style*/
 }
 @media screen and (max-width: 576px) {
   .default-btn {
-    font-size: 14px;
+    font-size: 15px;
     padding: 12px 20px 13px;
   }
 }
@@ -306,11 +312,11 @@ Section Title Area Style*/
   font-weight: 600;
 }
 .section-title h2 {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 15px;
   position: relative;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: 800;
 }
 .section-title h2:last-child {
   margin-bottom: 0;
@@ -692,7 +698,7 @@ Navbar Area Style
 /* Navbar toggler */
 .navbar-toggler {
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   padding: 0;
 }
 .navbar-toggler:focus {
@@ -705,7 +711,7 @@ Navbar Area Style
   background: #fff;
   height: 4px;
   display: block;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
@@ -945,9 +951,9 @@ Feature Area Style
 }
 .feature-area.feature-area-two .single-feature:hover {
   /* background-color: #e21f36; */
-  /* background-color: #00487A; */
+  background-color: #00487A;
   /* background-color: #EDB402; */
-  background-color: #69bfa4;
+  /* background-color: #69bfa4; */
 }
 .feature-area.feature-area-two .single-feature:hover i {
   color: #ffffff;
@@ -988,6 +994,7 @@ Feature Area Style
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   transition: all ease 0.5s;
   background-color: #ffffff;
+  border-radius: 15px;
 }
 .single-feature .title {
   position: relative;
@@ -1003,15 +1010,18 @@ Feature Area Style
 }
 .single-feature .title h3 {
   transition: all ease 0.5s;
-  padding-left: 65px;
-  padding-top: 12px;
+  padding-left: 70px;
+  padding-top: 0px;
+}
+.single-feature.soc-card .title h3 {
+  padding-left: 0px;
 }
 .single-feature p {
   transition: all ease 0.5s;
   margin-bottom: 0;
 }
 .single-feature:hover {
-  background-color: #69bfa4;
+  background-color: #00487A;
   transform: translateY(-5px);
 }
 .single-feature:hover .title i {
@@ -1160,6 +1170,7 @@ Our Approach Area Style
   transition: all ease 0.5s;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: relative;
+  border-radius: 12px;
 }
 .single-approach h3 {
   margin-bottom: 10px;
@@ -1280,6 +1291,7 @@ Services Area Style
   transition: all ease 0.5s;
   overflow: hidden;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 .single-services .services-img a {
   position: relative;
@@ -1624,6 +1636,7 @@ Testimonials Area Style
   text-align: center;
   border: 1px solid #eee;
   padding: 40px 30px;
+  border-radius: 15px;
 }
 .testimonials-area.testimonials-page-area .testimonials-item p {
   color: #4b5280;
@@ -1761,6 +1774,8 @@ Blog Area Style
 .single-blog {
   transition: all ease 0.5s;
   margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .single-blog .blog-img a {
   display: block;
@@ -2052,6 +2067,7 @@ Pricing Area Style
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+  border-radius: 15px;
 }
 .single-pricing .pricing-shape {
   position: absolute;
@@ -2341,6 +2357,8 @@ Team Area Style
   transition: all ease 0.5s;
   margin-bottom: 30px;
   text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .single-team .team-content {
   position: relative;
@@ -2350,6 +2368,7 @@ Team Area Style
   margin-left: 30px;
   margin-right: 30px;
   transition: all ease 0.5s;
+  border-radius: 10px;
 }
 .single-team .team-content h3 {
   color: #ffffff;
@@ -2419,6 +2438,7 @@ Approach Area Style
   text-align: center;
   margin-top: 40px;
   z-index: 1;
+  border-radius: 15px;
 }
 .single-approach-box .icon {
   font-size: 40px;
@@ -2491,7 +2511,7 @@ Safety Area Style
 ======================================================*/
 .safety-area {
   overflow: hidden;
-  background-color: #fffaf3;
+  background-color: #ffffff;
   position: relative;
   z-index: 1;
 }
@@ -2522,6 +2542,7 @@ Safety Area Style
   padding: 30px;
   border: 1px solid #f3f3f3;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 .single-safety:hover {
   background-color: #fff;
@@ -4630,6 +4651,8 @@ Services Details Area Style
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .services-sidebar .services-category ul li a {
   font-weight: 600;

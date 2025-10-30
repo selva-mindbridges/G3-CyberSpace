@@ -10,8 +10,8 @@ const Features: React.FC = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-testing"></i>
                     <h3>Cybersecurity & Data Privacy Services</h3>
@@ -32,8 +32,8 @@ const Features: React.FC = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-cybercrime"></i>
                     <h3>Virtual CISO / DPO Services</h3>
@@ -54,8 +54,8 @@ const Features: React.FC = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-cyber-security"></i>
                     <h3>Data Privacy Implementation</h3>
@@ -81,8 +81,8 @@ const Features: React.FC = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-testing"></i>
                     <h3>Regulatory & Legal Advisory</h3>
@@ -103,8 +103,8 @@ const Features: React.FC = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-cybercrime"></i>
                     <h3>Penetration Testing (VAPT)</h3>
@@ -125,8 +125,8 @@ const Features: React.FC = () => {
             </div>
 
             <div className="col-lg-4 col-sm-6">
-              <div className="single-feature overly-one">
-                <div className="overly-two">
+              <div className="single-feature overly-one" style={{ minHeight: '300px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="title">
                     <i className="flaticon-cyber-security"></i>
                     <h3>Training & Workshops</h3>

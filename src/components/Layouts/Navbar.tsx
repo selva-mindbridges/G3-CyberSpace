@@ -71,8 +71,8 @@ const Navbar: React.FC = () => {
 
                 <div className="others-option">
                   <div className="get-quote">
-                    <Link href="/contact" className="default-btn">
-                      <span>Get a Quote</span>
+                    <Link href="https://calendly.com/gokul-g3cyberspace/30min" className="default-btn" target="_blank" rel="noopener noreferrer">
+                      <span>Book Demo</span>
                     </Link>
                   </div>
                 </div>

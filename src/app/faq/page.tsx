@@ -11,10 +11,11 @@ export default function Page() {
       <NavbarFive />
 
       <PageBanner
-        pageTitle="Faq's"
+        pageTitle="Frequently Asked Questions"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Faq's"
+        activePageText="Frequently Asked Questions"
+        leftAlignedLayout={true}
       />
 
       <FaqContent />

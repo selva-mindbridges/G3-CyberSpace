@@ -99,6 +99,18 @@ export const menus = [
         label: "VAPT",
         link: "/services/",
       },
+      {
+        label: "SOC",
+        link: "/services/5/",
+      },
+      // {
+      //   label: "Cloud Services",
+      //   link: "/services/4/",
+      // },
+      // {
+      //   label: "IT Infrastructure Services",
+      //   link: "/services/6/",
+      // },
       
     ],
   },

@@ -20,37 +20,43 @@ const Solution: React.FC = () => {
 
                 <div className="row">
                   <div className="col-lg-12 col-md-6">
-                    <div className="single-solution overly-one">
+                    <div className="single-feature overly-one">
                       <div className="overly-two">
-                        <h3>Dynamic and Collaborative Culture:</h3>
+                        <div className="title">
+                          <i className="flaticon-cyber-security"></i>
+                          <h3>Dynamic and Collaborative Culture</h3>
+                        </div>
                         <p>
                           Thrive in an innovative environment that values teamwork and fresh ideas
                         </p>
-                        <span>01</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="col-lg-12 col-md-6">
-                    <div className="single-solution overly-one">
+                    <div className="single-feature overly-one">
                       <div className="overly-two">
-                        <h3> Career Growth Opportunities: </h3>
+                        <div className="title">
+                          <i className="flaticon-testing"></i>
+                          <h3>Career Growth Opportunities</h3>
+                        </div>
                         <p>
                          Unlock your potential with continuous learning and professional development.
                         </p>
-                        <span>02</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="col-lg-12 col-md-6 offset-md-3 offset-lg-0">
-                    <div className="single-solution overly-one">
+                    <div className="single-feature overly-one">
                       <div className="overly-two">
-                        <h3>Pioneering Solutions:</h3>
+                        <div className="title">
+                          <i className="flaticon-cybercrime"></i>
+                          <h3>Pioneering Solutions</h3>
+                        </div>
                         <p>
                          Be part of a team driving advancements in data privacy, cybersecurity, and compliance.
                         </p>
-                        <span>03</span>
                       </div>
                     </div>
                   </div>

@@ -14,6 +14,7 @@ export default function Page() {
         homePageUrl="/"
         homePageText="Home"
         activePageText="Data Protection Services"
+        leftAlignedLayout={true}
       />
 
       <ServicesDetailsContent />

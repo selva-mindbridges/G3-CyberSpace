@@ -15,6 +15,7 @@ export default function Page() {
         homePageUrl="/"
         homePageText="Home"
         activePageText="Professional Services"
+        leftAlignedLayout={true}
       />
       <br />
       <br />

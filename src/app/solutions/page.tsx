@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarFive from "../../components/Layouts/NavbarFive";
+import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
 import Footer from "../../components/Layouts/Footer";
 import SolutionsCard from "../../components/Solutions/SolutionsCard";
@@ -7,7 +7,7 @@ import SolutionsCard from "../../components/Solutions/SolutionsCard";
 export default function Page() {
   return (
     <>
-      <NavbarFive />
+      <Navbar />
 
       <PageBanner
         pageTitle="Third Party Risk Assessment & Compliance Suite"

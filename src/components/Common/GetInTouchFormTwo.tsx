@@ -18,6 +18,8 @@ const GetInTouchFormTwo: React.FC = () => {
           <form
             id="contactForm" 
             className="get-in-touch-form"
+            action="https://submit-form.com/UWXw8uoaG" 
+            method="POST"
           >
             <div className="row">
               <div className="col-lg-6 col-md-6">
@@ -56,7 +58,7 @@ const GetInTouchFormTwo: React.FC = () => {
                 </div>
               </div>
 
-              {/* <div className="col-lg-6 col-md-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="form-group">
                   <label>Subject</label>
                   <input
@@ -66,9 +68,9 @@ const GetInTouchFormTwo: React.FC = () => {
                     required
                   />
                 </div>
-              </div> */}
+              </div>
 
-              {/* <div className="col-lg-12 col-md-12">
+              <div className="col-lg-12 col-md-12">
                 <div className="form-group">
                   <label>Message</label>
                   <textarea
@@ -79,11 +81,11 @@ const GetInTouchFormTwo: React.FC = () => {
                     required
                   />
                 </div>
-              </div> */}
+              </div>
 
               <div className="col-lg-12 col-sm-12">
                 <button type="submit" className="default-btn">
-                  Book Your Demo
+                  Consultation
                 </button>
               </div>
             </div>

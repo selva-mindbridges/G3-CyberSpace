@@ -14,6 +14,7 @@ export default function Page() {
         homePageUrl="/"
         homePageText="Home"
         activePageText="Solution Details"
+        leftAlignedLayout={true}
       />
 
       <SolutionDetailsContent />

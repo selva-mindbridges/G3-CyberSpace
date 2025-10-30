@@ -16,7 +16,7 @@ const ContactForm: React.FC = () => {
                   </div>
 
                   <form id="contactForm"
-                            action="https://formspree.io/f/mpwjlpnv" 
+                            action="https://submit-form.com/UWXw8uoaG" 
                             method="POST"                  
                   >
                     <div className="row">

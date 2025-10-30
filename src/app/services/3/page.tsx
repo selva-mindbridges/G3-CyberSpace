@@ -15,6 +15,7 @@ export default function Page() {
         homePageUrl="/"
         homePageText="Home"
         activePageText="Cybersecurity Assessments"
+        leftAlignedLayout={true}
       />
       <br />
       <br />
@@ -60,8 +61,8 @@ export default function Page() {
 
           <div className="row">
             <div className="col-lg-3 col-sm-6">
-              <div className="single-approach-box overly-one">
-                <div className="overly-two">
+              <div className="single-approach-box overly-one" style={{ minHeight: '380px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="icon">
                     <i className="flaticon-pin"></i>
                   </div>
@@ -84,8 +85,8 @@ export default function Page() {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="single-approach-box overly-one">
-                <div className="overly-two">
+              <div className="single-approach-box overly-one" style={{ minHeight: '380px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="icon">
                     <i className="flaticon-padlock"></i>
                   </div>
@@ -108,8 +109,8 @@ export default function Page() {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="single-approach-box overly-one">
-                <div className="overly-two">
+              <div className="single-approach-box overly-one" style={{ minHeight: '380px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="icon">
                     <i className="flaticon-url"></i>
                   </div>
@@ -132,15 +133,15 @@ export default function Page() {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="single-approach-box overly-one">
-                <div className="overly-two">
+              <div className="single-approach-box overly-one" style={{ minHeight: '380px', display: 'flex', flexDirection: 'column' }}>
+                <div className="overly-two" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <div className="icon">
                     <i className="flaticon-antivirus"></i>
                   </div>
 
                   <h3>Continuous Monitoring & Audit Support</h3>
                   <p>
-                    We don’t just stop at implementation. We set up monitoring systems, internal audits, and readiness checks to maintain and demonstrate compliance.{" "}
+                    We don't just stop at implementation. We set up monitoring systems, internal audits, and readiness checks to maintain and demonstrate compliance.{" "}
                   </p>
 
                   <div className="approach-shape">

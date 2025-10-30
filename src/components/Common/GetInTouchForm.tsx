@@ -17,6 +17,8 @@ const GetInTouchForm: React.FC = () => {
           <form
             id="contactForm"
             className="get-in-touch-form"
+            action="https://submit-form.com/UWXw8uoaG" 
+            method="POST"
           >
             <div className="row">
               <div className="col-lg-6 col-md-6">

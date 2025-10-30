@@ -123,14 +123,14 @@ const FaqContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="faq-right-shape shape-three">
+        {/* <div className="faq-right-shape shape-three">
           <Image
             src="/images/faq-right-shape.png"
             alt="Image"
             width={130}
             height={224}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

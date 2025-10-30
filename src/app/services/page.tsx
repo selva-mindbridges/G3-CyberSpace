@@ -11,10 +11,11 @@ export default function Page() {
       <NavbarFive />
 
       <PageBanner
-        pageTitle="VAPT"
+        pageTitle="Vulnerability Assessment and Penetration Testing"
         homePageUrl="/"
         homePageText="Home"
         activePageText="VAPT"
+        leftAlignedLayout={true}
       />
       <br />
       <br />
