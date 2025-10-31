@@ -68,7 +68,10 @@ const SolutionsCard: React.FC = () => {
                 {/* <div className="single-counter overly-one"> */}
                   {/* <div className="overly-two"> */}
                     {/* <i className="flaticon-authentication"></i> */}
-                    <button className="book-now-button">
+                    <button 
+                      className="book-now-button"
+                      onClick={() => window.open('https://calendly.com/gokul-g3cyberspace/30min', '_blank')}
+                    >
                     BOOK NOW
                     <span className="arrow">&#8250;</span>
                     </button>

@@ -15,7 +15,7 @@ const ServicesDetailsContent: React.FC = () => {
         <div className="solution-title pt-70">
           <h2 className={`${classes.textAlignCenter}`}>Our Approach</h2>
         </div>
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="solution-content">

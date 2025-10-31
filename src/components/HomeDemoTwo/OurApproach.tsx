@@ -63,7 +63,7 @@ const OurApproach: React.FC = () => {
                     <div className="single-approach">
                       <h3>Operational Resilience</h3>
                       <p>
-                        Build continuous trust with real-time surveillance, automated assurance, and policy enforcement powered by AI.
+                        Build trust with AI-powered real-time monitoring, automated assurance, and continuous policy enforcement.
                       </p>
                     </div>
                   </div>

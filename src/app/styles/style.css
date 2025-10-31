@@ -995,10 +995,20 @@ Feature Area Style
   transition: all ease 0.5s;
   background-color: #ffffff;
   border-radius: 15px;
+  min-height: 250px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.single-feature .overly-two {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .single-feature .title {
   position: relative;
   margin-bottom: 28px;
+  flex: 0 0 auto;
 }
 .single-feature .title i {
   position: absolute;
@@ -1019,6 +1029,7 @@ Feature Area Style
 .single-feature p {
   transition: all ease 0.5s;
   margin-bottom: 0;
+  flex: 1;
 }
 .single-feature:hover {
   background-color: #00487A;
@@ -1171,15 +1182,21 @@ Our Approach Area Style
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   position: relative;
   border-radius: 12px;
+  min-height: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 .single-approach h3 {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   transition: all ease 0.5s;
+  flex: 0 0 auto;
 }
 .single-approach p {
   transition: all ease 0.5s;
+  flex: 1;
 }
 .single-approach:hover {
   transform: translateY(-5px);
@@ -1255,6 +1272,7 @@ Our Challenges Area Style
   padding: 30px 25px;
   text-align: center;
   z-index: 1;
+  border-radius: 15px;
 }
 .single-challenges i {
   font-size: 50px;
@@ -1380,6 +1398,7 @@ Solution Area Style
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   transition: all ease 0.5s;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 .single-solution h3 {
   margin-bottom: 12px;
@@ -1395,10 +1414,10 @@ Solution Area Style
 }
 .single-solution span {
   position: absolute;
-  top: -13px;
-  right: -4px;
+  top: 7px;
+  right: 14px;
   line-height: 1;
-  font-size: 80px;
+  font-size: 64px;
   opacity: 0.1;
   font-weight: 700;
 }
@@ -1512,7 +1531,7 @@ Protect Area Style
   padding: 20px;
 }
 .protect-area .col-lg-6 .row .col-lg-6:nth-child(2) .single-challenges {
-  margin-top: 30px;
+  margin-top: 0px;
   /* background-color: #e21f36; */
   background-color: #00487A;
   /* background-color: #EDB402; */
@@ -1528,7 +1547,7 @@ Protect Area Style
   color: #ffffff;
 }
 .protect-area .col-lg-6 .row .col-lg-6:nth-child(3) .single-challenges {
-  margin-top: -30px;
+  margin-top: 0px;
   /* background-color: #e21f36; */
   background-color: #00487A;
   /* background-color: #EDB402; */
@@ -2048,6 +2067,11 @@ About Area Style
   margin-bottom: 0;
 }
 
+.about-img img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 /*
 Pricing Area Style
 ======================================================*/
@@ -2262,16 +2286,24 @@ Counter Area Style
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-/* .book-now-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 188, 212, 0.5);
-} */
+.book-now-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(105, 191, 164, 0.6);
+  background-color: #5aae94;
+  border-color: #5aae94;
+}
 
 .book-now-button .arrow {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 1px 12px;
   border-radius: 50%;
   font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.book-now-button:hover .arrow {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(3px);
 }
 
 
@@ -2439,6 +2471,11 @@ Approach Area Style
   margin-top: 40px;
   z-index: 1;
   border-radius: 15px;
+  min-height: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .single-approach-box .icon {
   font-size: 40px;
@@ -2469,9 +2506,13 @@ Approach Area Style
 .single-approach-box h3 {
   margin-bottom: 12px;
   margin-top: 35px;
+  flex: 0 0 auto;
+  font-size: 18px;
+  line-height: 1.4;
 }
 .single-approach-box p {
   margin-bottom: 0;
+  flex: 1;
 }
 .single-approach-box .approach-shape {
   position: absolute;

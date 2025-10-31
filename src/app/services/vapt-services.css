@@ -1,0 +1,926 @@
+.vapt-services-section {
+  padding: 80px 0;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%); */
+}
+
+.vapt-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.circular-diagram-wrapper {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #f0f4f8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.center-circle-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.center-circle-inner::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-circle-inner::after {
+  content: 'VAPT';
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+.center-circle img {
+  display: none;
+}
+
+/* VAPT About Info Card */
+.vapt-info-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+  width: 500px;
+  max-width: 90vw;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.6, 0, 0.4, 1);
+  border-left: 5px solid #667eea;
+  animation: spinOutVAPT 0.6s cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+.center-circle:hover + .vapt-info-card,
+.vapt-info-card:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  animation: spinInVAPT 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.center-circle:hover {
+  opacity: 0.3;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.vapt-info-card h4 {
+  font-size: 14px;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.vapt-info-card h3 {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.vapt-info-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.vapt-info-card p b {
+  color: #667eea;
+  font-weight: 700;
+}
+
+@keyframes spinInVAPT {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}
+
+@keyframes spinOutVAPT {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
+  }
+}
+
+/* Circular icon buttons */
+.circular-icon {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  padding: 8px;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Staggered animation delays for each icon */
+.icon-web-app { animation-delay: 0s; }
+.icon-network { animation-delay: 0.4s; }
+.icon-mobile { animation-delay: 0.8s; }
+.icon-thick-client { animation-delay: 1.2s; }
+.icon-api { animation-delay: 1.6s; }
+.icon-cloud { animation-delay: 2s; }
+.icon-source-code { animation-delay: 2.4s; }
+.icon-red-team { animation-delay: 2.8s; }
+
+.circular-icon:hover {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.circular-icon i {
+  font-size: 26px;
+  display: block;
+}
+
+.circular-icon .icon-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-item {
+  padding: 20px 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-left: 5px solid transparent;
+  position: absolute;
+  overflow: hidden;
+  width: 320px;
+  max-width: 320px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 150;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation-fill-mode: both;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  opacity: 0;
+}
+
+/* Spin in animation keyframes */
+@keyframes spinInTop {
+  0% {
+    transform: translate(-50%, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInTopRight {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInRight {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInBottomRight {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInBottom {
+  0% {
+    transform: translate(-50%, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInBottomLeft {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInLeft {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinInTopLeft {
+  0% {
+    transform: translate(0, 0) scale(0.1) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Show service on icon hover */
+.circular-icon:hover + .service-item,
+.service-item:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto;
+}
+
+.circular-icon:hover + .service-item::before,
+.service-item:hover::before {
+  opacity: 0.05;
+}
+
+/* Maintain visibility when moving from icon to card */
+.circular-icon:hover ~ .service-item:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.service-item h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  color: #1a237e;
+}
+
+.service-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.service-item ul li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.service-item:hover ul li {
+  color: #333;
+}
+
+.service-item ul li:before {
+  content: "●";
+  position: absolute;
+  left: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Color scheme for each service - Cyan/Blue */
+.service-cyan {
+  border-left-color: #00bcd4;
+}
+
+.service-cyan::before {
+  background: linear-gradient(to right, #00bcd4, #0097a7);
+}
+
+.service-cyan .service-icon {
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.service-cyan:hover .service-icon {
+  background: linear-gradient(135deg, #0097a7, #00838f);
+}
+
+.service-cyan ul li:before {
+  color: #00bcd4;
+}
+
+.service-cyan:hover h3 {
+  color: #00838f;
+}
+
+/* Color scheme for Green */
+.service-green {
+  border-left-color: #4caf50;
+}
+
+.service-green::before {
+  background: linear-gradient(to right, #4caf50, #388e3c);
+}
+
+.service-green .service-icon {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.service-green:hover .service-icon {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+}
+
+.service-green ul li:before {
+  color: #4caf50;
+}
+
+.service-green:hover h3 {
+  color: #2e7d32;
+}
+
+/* Color scheme for Purple */
+.service-purple {
+  border-left-color: #9c27b0;
+}
+
+.service-purple::before {
+  background: linear-gradient(to right, #9c27b0, #7b1fa2);
+}
+
+.service-purple .service-icon {
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+.service-purple:hover .service-icon {
+  background: linear-gradient(135deg, #7b1fa2, #6a1b9a);
+}
+
+.service-purple ul li:before {
+  color: #9c27b0;
+}
+
+.service-purple:hover h3 {
+  color: #6a1b9a;
+}
+
+/* Color scheme for Teal */
+.service-teal {
+  border-left-color: #009688;
+}
+
+.service-teal::before {
+  background: linear-gradient(to right, #009688, #00796b);
+}
+
+.service-teal .service-icon {
+  background: linear-gradient(135deg, #009688, #00796b);
+}
+
+.service-teal:hover .service-icon {
+  background: linear-gradient(135deg, #00796b, #00695c);
+}
+
+.service-teal ul li:before {
+  color: #009688;
+}
+
+.service-teal:hover h3 {
+  color: #00695c;
+}
+
+/* Icon positions around the circle - Perfect 45° spacing */
+.icon-web-app {
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.icon-network {
+  top: 23%;
+  right: 23%;
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.icon-thick-client {
+  top: 50%;
+  right: 12%;
+  transform: translate(50%, -50%);
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.icon-cloud {
+  bottom: 23%;
+  right: 23%;
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+.icon-red-team {
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.icon-source-code {
+  bottom: 23%;
+  left: 23%;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.icon-api {
+  top: 44%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #009688, #00796b);
+}
+
+.icon-mobile {
+  top: 23%;
+  left: 23%;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+/* Service card positions - Start from center of each icon button */
+.service-web-app {
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, 0) scale(0.1);
+}
+
+.service-network {
+  top: 23%;
+  right: 23%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+.service-thick-client {
+  top: 44%;
+  right: 12%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+.service-cloud {
+  bottom: 23%;
+  right: 23%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+.service-red-team {
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%, 0) scale(0.1);
+}
+
+.service-source-code {
+  bottom: 23%;
+  left: 23%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+.service-api {
+  top: 50%;
+  left: 12%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+.service-mobile {
+  top: 23%;
+  left: 23%;
+  transform: translate(0, 0) scale(0.1);
+}
+
+/* Active state transforms - Pop out from each icon's center with spin (no overlap with center) */
+.circular-icon:hover + .service-item.service-web-app,
+.service-web-app:hover {
+  top: -150px !important;
+  left: 50% !important;
+  transform: translateX(-50%) scale(1) rotate(360deg) !important;
+  animation-name: spinInTop;
+}
+
+.circular-icon:hover + .service-item.service-network,
+.service-network:hover {
+  top: -100px !important;
+  right: -50px !important;
+  transform: scale(1) rotate(360deg) !important;
+  animation-name: spinInTopRight;
+}
+
+.circular-icon:hover + .service-item.service-mobile,
+.service-mobile:hover {
+  left: -50px !important;
+  top: -100px !important;
+  /* left: -50px !important; */
+  transform: scale(1) rotate(360deg) !important;
+  animation-name: spinInTopLeft;
+}
+
+.circular-icon:hover + .service-item.service-thick-client,
+.service-thick-client:hover {
+  top: 50% !important;
+  right: -130px !important;
+  transform: translateY(-50%) scale(1) rotate(360deg) !important;
+  animation-name: spinInRight;
+}
+
+.circular-icon:hover + .service-item.service-api,
+.service-api:hover {
+  top: 50% !important;
+  left: -100px !important;
+  transform: translateY(-50%) scale(1) rotate(360deg) !important;
+  animation-name: spinInLeft;
+}
+
+.circular-icon:hover + .service-item.service-cloud,
+.service-cloud:hover {
+  bottom: -10px !important;
+  top: auto !important;
+  right: -70px !important;
+  transform: scale(1) rotate(360deg) !important;
+  animation-name: spinInBottomRight;
+}
+
+.circular-icon:hover + .service-item.service-source-code,
+.service-source-code:hover {
+  bottom: 0px !important;
+  top: auto !important;
+  left: -50px !important;
+  transform: scale(1) rotate(360deg) !important;
+  animation-name: spinInBottomLeft;
+}
+
+.circular-icon:hover + .service-item.service-red-team,
+.service-red-team:hover {
+  bottom: -60px !important;
+  top: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) scale(1) rotate(360deg) !important;
+  animation-name: spinInBottom;
+}
+
+/* Responsive design */
+@media (max-width: 1600px) {
+  .service-item {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .circular-diagram {
+    height: 900px;
+  }
+
+  .circular-diagram-wrapper {
+    min-height: 900px;
+  }
+
+  .center-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .service-item {
+    width: 280px;
+    max-width: 280px;
+    padding: 18px 20px;
+  }
+
+  .service-item h3 {
+    font-size: 17px;
+  }
+
+  .section-header h1 {
+    font-size: 36px;
+  }
+  
+  /* Adjust circular positions for smaller screens */
+  .service-web-app {
+    top: 10%;
+  }
+
+  .service-network {
+    top: 21%;
+    right: 21%;
+  }
+
+  .service-mobile {
+    top: 21%;
+    left: 21%;
+  }
+
+  .service-thick-client {
+    top: 48%;
+    right: 10%;
+  }
+
+  .service-api {
+    top: 48%;
+    left: 10%;
+  }
+
+  .service-cloud {
+    bottom: 21%;
+    right: 21%;
+  }
+
+  .service-source-code {
+    bottom: 21%;
+    left: 21%;
+  }
+
+  .service-red-team {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .circular-diagram {
+    height: 700px;
+  }
+
+  .circular-diagram-wrapper {
+    min-height: 700px;
+  }
+
+  .center-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .service-item {
+    width: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .circular-diagram {
+    height: 600px;
+  }
+
+  .circular-diagram-wrapper {
+    min-height: 600px;
+  }
+
+  .center-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .center-circle-inner::after {
+    font-size: 24px;
+  }
+
+  .center-circle-inner::before {
+    width: 150px;
+    height: 150px;
+  }
+
+  .vapt-info-card {
+    width: 90%;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .vapt-info-card h3 {
+    font-size: 18px;
+  }
+
+  .vapt-info-card p {
+    font-size: 14px;
+  }
+
+  .circular-icon {
+    width: 70px;
+    height: 70px;
+    gap: 3px;
+  }
+
+  .circular-icon i {
+    font-size: 20px;
+  }
+
+  .circular-icon .icon-label {
+    font-size: 9px;
+  }
+
+  .service-item {
+    width: 280px;
+    max-width: 280px;
+    padding: 15px 18px;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) !important;
+    position: static;
+    margin: 10px auto;
+  }
+
+  .service-item h3 {
+    font-size: 16px;
+  }
+
+  .section-header h1 {
+    font-size: 32px;
+  }
+
+  .vapt-services-section {
+    padding: 60px 0;
+  }
+
+  .circular-diagram {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .center-circle {
+    position: static;
+    transform: none;
+    margin: 0 auto 20px;
+  }
+
+  .circular-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 28px;
+  }
+
+  .service-item {
+    padding: 18px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-item h3 {
+    font-size: 16px;
+  }
+
+  .service-item ul li {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .center-circle {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .center-circle-inner::after {
+    font-size: 20px;
+  }
+
+  .center-circle-inner::before {
+    width: 120px;
+    height: 120px;
+  }
+
+  .vapt-services-section {
+    padding: 40px 0;
+  }
+
+  .vapt-info-card {
+    width: 95%;
+    padding: 20px;
+    max-height: 350px;
+  }
+
+  .vapt-info-card h3 {
+    font-size: 16px;
+  }
+
+  .vapt-info-card p {
+    font-size: 13px;
+  }
+}
+
